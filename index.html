@@ -1,0 +1,40 @@
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>Ananas</title>
+<style>
+	 body {
+	        background-color: brown;
+          }
+       h1 {
+	        color:red;
+		  }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+        window.onload = function() {
+		$('#kyllä_nappi').click(function() {
+			$('#kylla_teksti').show();
+		});
+		$('#ei_nappi').click(function() {
+			$('#ei_teksti').show();
+		});
+		
+		$('#kylla_teksti').hide();
+		$('#ei_teksti').hide();
+		}
+</script>
+</head>
+<body>
+
+     <h1>Kuuluuko ananas pizaan?</h1>
+	 <p>Jospa ei! ;D</p>
+	 <button id="kyllä_nappi">Kyllä</button>
+	 <button id="ei_nappi">Ei</button>
+	 <p id="kylla_teksti">Hävisit pelin!</p>
+	 <p id="ei_teksti">Voitit pelin!</p>
+	 
+
+
+
+</html>
